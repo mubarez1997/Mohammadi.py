@@ -1,0 +1,211 @@
+#==================================
+# Taklif 5 
+# tamren 1 -------------------> nomayesh addad
+
+for i in range(11,50,2):
+    print(i)
+
+# Tamren 2 -------------> shomaresh makos
+
+for i in range(20,0,-1):
+    print(i)
+    
+# Tamren 3 ------------> majmo addad
+total=0
+for i in range(1,101):
+    total+=i
+print(total)
+
+# Tamren 4 -----------> jadval zarb
+
+number=int(input(' addad vared koned :'))
+for multiple in range(1,11):
+    print(number*multiple)
+    
+# Tamren 5 -----------> barasi addad dakhil list
+
+numbers=[12,7,25,18,3,40,11,8]
+count=0
+new_num=[]
+for i in numbers:
+    if i %2==0:
+        print(i)
+        # count=count+1
+        count+=1
+        new_num.append(i)
+print(new_num)
+print(count)
+
+
+# Tamren 6 --------------> mohaseba majmo va meyangen
+
+scores=[15,18,12,20,16,14,19]
+total=0
+for score in scores:
+    total+=score
+print(total)
+
+print("Average=",total/len(scores))
+
+
+# Tamren 7 --------------> ejad list jaded 
+numbers=[2,4,6,8,10]
+squer=[]
+for num in numbers:
+    print(num**2)
+    squer.append(num)
+print(squer)
+
+
+# Tamren 8 ----------------> daryaft chand addad az karbar 
+number=int(input('chand addad mekhahed :'))
+list_number=[]
+for i in range(0,number):
+    new_num=int(input(' addad vared konid :'))
+    list_number.append(new_num)
+print(list_number)
+
+
+# Tamren 9 ----------------> payda kardan addad movred nazar
+
+numbers=[4,9,15,23,42,56,71]
+new_num=int(input(' addad vared konid : '))
+for i in numbers:
+    if i==new_num:
+        print(' number found')
+        break
+
+# Tamren 10 ---------------> 
+
+for i in range(1,30):
+    if i %3==0:
+        continue
+    
+    print(i)
+
+
+# Tamren 11 --------------> tavaqof halqa ba sefer
+
+total=0
+for i in range(10):
+    num=int(input(' addad vared konid :'))
+    if num==0:
+        break
+    total+=num
+print(total)
+    
+
+total=0
+for i in range(10):
+    num=int(input(f"number{number+1}:"))
+    if num==0:
+        break
+    total+=num
+print(total)
+    
+# Tamren 12 ----------------> etelat daneshjo
+
+students=[("ali",22),("sara",19),("reza",25),("nima",20),("mina",23)]
+for name,age in students:
+    #print(name,age)
+    print("name:",name,"age:",age)
+    #print(f"name:{name},age:{age}")
+    
+students=[("ali",22),("sara",19),("reza",25),("nima",20),("mina",23)]
+for student in students:
+    #print(name,age)
+   #print("name:",name,"age:",age)
+    #print(f"name:{name},age:{age}")
+    
+    print(f"name:{student[0]},age:{student[1]}")
+          
+# Tamren 13 -----------------> feltar danishjoyan bar assa nomra
+
+students=[("ali",18),("sara",12),("reza",9),("mina",20),("nima",14)]
+
+for name,score in students:
+    if score>=15:
+        print(name)
+        
+# Tamren 14 -----------------> maheseba qemat mahsol
+products=[("laptop",500000,2),("mouse",800,3),("keybord",1500,2),("monitor",12000,1)]
+total_price=0
+for name,price,quentity in products:
+    subtotal=price*quentity
+    print(subtotal)
+    total_price+=subtotal
+print(total_price)
+    
+
+# Taklif 15 ------------------> jostojo karber
+
+users=[ (1," ali","active"),(2,"sara","inactive"),(3,"reza","active"),(4,"mina","inactive"),(5,"nima","active")]
+found=0
+target=input(' inter the name :')
+for ID,name,state in users:
+    if name==target:
+        print(ID,name,state)
+        found=1
+        break
+if found==0:
+    print("user not found")
+
+# namovafaq ---------------?????????????
+
+
+# Taklif 16 --------------> system moderiat nomarat danishjo
+
+students=[("ali",22,18),("sara",20,15),("reza",23,9),("mina",21,20),("nima",19,12),("amir",24,7)]
+total=0
+highest_score=students[0][2]
+for name, age, score in students:
+    print(name,age,score)
+    total+=score
+    if score <10:
+        print("below,10",name)
+        if score >highest_score:
+            highest_score=score
+                
+print("total",total)
+average=total/len(students)
+print("average",total/len(students))
+print(highest_score)
+for name,age, score in students:
+    if score >average:
+        print(name)
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
