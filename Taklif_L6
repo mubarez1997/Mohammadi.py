@@ -1,1 +1,358 @@
 print("salam")
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 24 08:43:30 2026
+
+@author: Abdullah mohammadi
+"""
+# Tamren 1 -------------> nomayesh addad
+
+
+def odd_number(start,end):
+    result=[]
+    for i in range(start,end,1):
+        if i %2 !=0:
+            result.append(i)
+    return result
+
+Odd_number=odd_number(10,50)
+print(Odd_number)
+
+
+
+# Tamren 2 --------------> shomaresh makos
+
+def my_number(start,end):
+    reverse_number=[]
+    for i in range(start,end,-1):
+        reverse_number.append(i)
+    return reverse_number
+       
+My_number=my_number(20, 0)
+print(My_number)
+
+# Tamren 3 -----------------> majmo addad
+
+def total_number(start,end):
+    count=0
+    for i in range(start,end):
+        count+=i
+    return count
+
+Total_number=total_number(1, 101)
+print(Total_number)
+                  
+# Tamren 4 -----------------> jadval zarb
+
+def multipal_number(zarb):
+    result=[]
+    
+    for multipal in range(1,11):
+        new_number=number*multipal
+        number=int(input('addad vared koned az 1-10 :'))
+        
+    result.append(number)
+    return result
+
+Multipal_number=multipal_number(3)
+print(Multipal_number)
+
+# na movafaq
+
+# Tamren 5 --------------------> barasi addad zoj dar list
+
+def My_list(addad_zoj):
+    numbers=[8,11,40,3,18,25,7,12]
+    Numbers=[]
+    for number in numbers:
+        if number %2==0:
+            Numbers.append(number)
+    return(Numbers)
+
+new_list=My_list(1)
+print(new_list)
+
+# Tanreb 6 -------------------> majmo va meyangen nomarat
+
+def numbers(sum,average):
+    scores=[19,14,16,20,12,18,15]
+    count=0
+    for score in scores:
+        count+=score
+    return(count)
+    average=count/len(scores)
+    return(average)
+new_numbers=numbers(20, 16)
+print(new_numbers)
+print(average)
+
+# Tamren 7 ------------------> ejad list jaded
+
+def my_numbers(squer_number):
+    numbers=[2,4,6,8,10]
+    squer=[]
+    for number in numbers:
+        result=number**2
+        squer.append(result)
+    return(squer)
+
+new_number=my_numbers(2**2)
+print(new_number)
+
+# Tamren 8 -----------------> daryaft chand addad az karbar
+
+def collect_number(count):
+   
+    new_list=[]
+    for i in range(count):
+        new_number=int(input("addad vared koned : "))
+   
+
+        new_list.append(new_number)
+    
+    return new_list
+
+sum_number=collect_number(4)
+print(sum_number)    
+
+
+# Tamren 9 -----------------> payda kardan addad movred nazar
+
+def my_number():
+    numbers=[4,5,6,9,10,20,80,99]
+    new_number=int(input('addad vared koned :'))
+    for i in numbers:
+        if i ==new_number:
+            print('number found')
+            break
+    else:
+        print('number not found')
+        
+find_number=my_number()
+print(find_number)
+#_______ namovafaq
+
+def my_number(number,target):
+    for num in number:
+        if num == target:
+            return True
+    return False
+numbers=[4,9,15,23,42,56,71]
+Numbers=my_number(numbers, 71)
+print(Numbers)
+
+
+
+# Tamren 10 ---------------> hazf mazref 3 az khoroji
+def number(start,end):
+    result=[]
+    for i in range(start,end):
+        if i %3!=0:
+            result.append(i)
+    return result
+
+numbers=number(1, 30)
+print(numbers)
+
+
+# Tamren 11 --------------> tavaqof addad ba sefr
+
+def my_number(start,end):
+    max_count=0
+    total=[]
+    for i in range(start,end):
+        number=int(input('addad vared koned :'))
+        if number==0:
+            break
+        total.append(number)
+        max_count+=i
+    return total
+    return max_count
+new_number=my_number(1, 10)
+print(new_number)
+
+
+
+# Tamren 12 --------------> etelate danishjo
+
+students=[('ali',22),('sara',18),('reaz',25),('nima',20),('mina',23)]
+for name,age in students:
+    print('Name :',name,'Age :',age)
+    
+
+
+# Tamren 13 ----------------> filter danishjoyan bar assas nomra
+
+def student(start,end):
+    result=[]
+    students=[('ali',18),('sara',12),('reaz',9),('nima',20),('mina',14)]
+    for name,score in students:
+        if score >=15:
+            result.append((name,score))
+    return(result)
+
+new_student=student(15,20)
+print(new_student)
+
+
+# Tamren 14 -----------------> mohesaba qemat mahsol
+def mahsol():
+    product=[('keybord',1500,2),('mouse',800,3),('laptap',5000,2),('manitor',1200,1)]
+    count=0
+    for name,price,number in product:
+        count+=price*number
+    return count
+final_product=mahsol()
+print(final_product)
+
+
+# Tamren 15 -----------------> jostojo karbar
+
+
+def serch_user(users,username):
+    for user_id,name,status in users:
+        if name==username:
+            return user_id
+        return None
+users=[(1,'ali','active'),(2,'sara','inactive'),(3,'reza','actuve')]
+result=serch_user(users, 'sara')
+print(result)
+
+# Tamren 16 ---------------> system moderiat nomarat danishjo
+
+# Tamren 17 ---------------> 
+def count_while(start,end):
+    numbers=[]
+    i=start
+    while i <=end:
+        numbers.append(i)
+        i+=1
+        return numbers
+result=count_while(1, 20)
+print('numbers',result)
+
+# Tamren 18 --------------> peyada sazi range with while
+
+
+def custom_range(start,stop,step):
+    numbers=[]
+    i = start
+    if step>0:
+        while i <stop:
+            numbers.append(i)
+            i+=step
+    elif step < 0:
+        while i >stop:
+            numbers.append(i)
+            i+=step
+    return numbers
+
+result=custom_range(2, 15, 3)
+print(result)
+
+# Tamren 19 ---------------> mohaseba majmo ba while
+
+def sum_n(n):
+    total=0
+    i=1
+    while i <=n:
+        total+=i
+        i+=1
+    return total
+result=sum_n(5)
+print(result)
+
+
+# Tamren 20 -------------------> daryaft addad motabar
+
+def number():
+    while True:
+        number=int(input('addad vared koned az 1 - 100:'))
+        if 1<=number<=100:
+            return number
+
+result=number()
+print(result)
+
+
+
+# Tamren 21 ------------------> majmo addad ta vorod sefr
+
+def number():
+    total=0
+    while True:
+        number=int(input('addad vared koned : '))
+        if number==0:
+            return total
+        total+= number
+
+result=number()
+print(result)
+
+# Tamren 22 -----------------> barasi ramz obor
+
+passwrod='python123'
+def login_password(correct_password):
+    while True:
+        new_password=input('enter a password :')
+        if new_password==passwrod:
+            print('login successfuly')
+            return True 
+        print('wrong password')
+        
+result=login_password("python123")
+print(result)
+
+
+
+# Tamren 23 -----------------> mahdodiat talash bari vorode
+
+def login(correct_password,max_attempt):
+    attempt=0
+    while attempt<max_attempt:
+        password=input('enter a password :')
+        attempt+=1
+        if password==correct_password:
+                print('login successfuly')
+                return True
+        print('wrong password')
+        print('attempt remain',max_attempt-attempt)
+        return False
+result=login('admin123, 3')
+print(result)
+
+
+# Tamren 24 -----------------> bazi hads addad
+
+def guss_number(secrete_number):
+    attempt=0
+    while True:
+        guss=int(input('addad vared koned az 1-20 :'))
+        attempt+=1
+        if guss>secrete_number:
+            print('to high')
+        elif guss <secrete_number:
+            print('to low')
+        else:
+            print('correct')
+            print('you won the game')
+            return attempt
+result=guss_number(13)
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
